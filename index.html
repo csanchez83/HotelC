@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+	<title>HotelC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jqmobile.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="home">
+	   <div data-role="header">
+            <h1>Hotel C</h1>
+        </div>
+	   <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">    
+            <li><a href="#nr1" >Nueva Reservación</a></li>    
+            <li><a href="#historial" data-transition="slide">Historial</a></li>    
+            <li><a href="#priv">Privacidad</a></li>    
+           </ul> 
+        
+        </div>
+	   <div data-role="footer" data-position="fixed">
+           <h4>Pie</h4>
+        </div>
+    </div>
+    <div data-role="page" id="priv">
+	   <div data-role="header">
+            <h1>Privacidad</h1>
+           <a data-role="button" data-rel="back">Atras</a>
+        </div>
+	   <div role="main" class="ui-content">
+         <p>Hola este es el apartado de privacidad  </p>
+        </div>	   
+    </div>
+    <div data-role="page" id="historial">
+	   <div data-role="header">
+            <h1>Historial</h1>
+           <a data-role="button" data-rel="back">Atras</a>
+        </div>
+	   <div role="main" class="ui-content">
+         <p>Hola este es el apartado de historial  </p>
+        </div>	   
+    </div>
+    
+    <div data-role="page" id="nr1">
+	   <div data-role="header">
+            <h1>Nueva Reservacion</h1>
+        </div>
+	   <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">    
+            <li data-role="list-devider">Tipo de Habitacion</li>
+            <li><a href="#">Simple</a></li>    
+            <li><a href="#">Doble</a></li>    
+            <li><a href="#">Suite</a></li>    
+           </ul> 
+        
+        </div>
+	   <div data-role="footer" data-position="fixed">
+           <div data-role="navbar">        
+               <ul>            
+                   <li><a href="#" data-rel="back">Cancelar</a></li>            
+                   <li><a href="#" id="nrSig">Siguiente</a></li>                        </ul>    
+           </div>
+        </div>
+    </div>
+    
+    <div data-role="page" id="nr2">
+	   <div data-role="header">
+            <h1>Nueva Reservacion</h1>
+        </div>
+	   <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">    
+            <li data-role="list-devider">Datos de Reservacion</li>
+            <li>Personas: 
+                <select id="nrPer">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>                
+            </li>
+            <li>Dias: 
+                <select id="nrDia">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>                
+            </li>
+            <li>Habitaciones: 
+                <select id="nrPer">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>                
+            </li>
+                
+           </ul> 
+        
+        </div>
+	   <div data-role="footer" data-position="fixed">
+           <div data-role="navbar">        
+               <ul>            
+                   <li><a href="#" data-rel="back">Atras</a></li>            
+                   <li><a href="#" id="nrEnv">Reservar</a></li>                        </ul>    
+           </div>
+        </div>
+    </div>
+</body>
+</html>
