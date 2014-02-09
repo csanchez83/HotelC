@@ -5,8 +5,16 @@
 	<title>HotelC</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+    <script src="phonegap.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jqmobile.js"></script>
+    <script src="js/API/eventos.js"></script>
+    <script src="js/API/servidor.js"></script>
+    <script src="js/API/captura.js"></script>
+    <script src="js/API/archivos.js"></script>
+    <script src="js/API/dispositivos.js"></script>
+    <script src="js/API/almacenamiento.js"></script>
+    
 </head>
 
 <body>
@@ -23,7 +31,7 @@
         
         </div>
 	   <div data-role="footer" data-position="fixed">
-           <h4>Pie</h4>
+           <a href="#nosotros" class="ui-btn" data-transition="slideup" >Nosotros</a>
         </div>
     </div>
     <div data-role="page" id="priv">
@@ -112,6 +120,41 @@
                    <li><a href="#" id="nrEnv">Reservar</a></li>                        </ul>    
            </div>
         </div>
+        
+        
     </div>
+    
+    <div data-role="page" id="nosotros">
+	   <div data-role="header">
+            <h1>Nosotros</h1>
+           <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext " data-rel="back">Atras</a>
+        </div>
+	   <div role="main" class="ui-content">
+         <p>Hola este es el apartado de Nosotros  </p>
+        </div>	   
+    </div>
+    
+    <div data-role="page" id="registro">
+	   <div data-role="header">
+            <h1>Registro</h1>
+           
+        </div>
+	   <div role="main" class="ui-content">
+         
+           <ul data-role="listview">
+                <li><input type="text" id="regNom" placeholder="Nombre"  /></li>
+               <li><input type="email" id= "regMail" placeholder="Correo Electronico"/> </li>
+               <li><input type="tel" id="regTel" placeholder="Telefono" /> </li>
+               <li><a href="#" id="regFoto">Tomar Foto</a></li>
+                      
+           </ul>
+           <br />
+           <a href="#" id="regEnv" class="ui-btn">Registrar</a>
+           <div id="regMFoto"></div>
+           
+        </div>
+        
+    </div>
+    
 </body>
 </html>
